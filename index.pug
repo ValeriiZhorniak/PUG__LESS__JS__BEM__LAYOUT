@@ -8,8 +8,9 @@ html(lang="en")
     title Le Restaurante
   body
    header.header
-    .header__top
-        img.header__logo(src="image/logo.png")
+    .header__content
+     .header__top
+        img.header__logo(src="image/logo.png", alt="logo")
         nav.header__nav
             ul.header__list
                 li
@@ -20,14 +21,65 @@ html(lang="en")
                     a.header__link(href="#") ABOUT US
                 li
                     a.header__link(href="#") CONTACTS
-    .header__menu
+     .header__menu
         .header__side
             p.header__title FOR MEAT LOVERS
             button.header__button FULL MENU
-        .header__center
+        .header__center.header__side
             p.header__title VEGETFRIAN & VEGAN
             button.header__button FULL MENU
         .header__side
             p.header__title SEE OUR SECRETS
             button.header__button TAKE ME THERE
-        
+
+   .menu 
+    .menu__content 
+     p.menu__title DAILY MENU 
+     .menu__vegan
+      input.menu__box#check(type="checkbox", onclick="check()")
+      label.menu__name(for="check") SHOW VEGAN MENU ONLY
+     .menu__list 
+      .menu__food#meat
+       img.menu__image(src="image/meat.png", alt="meat")
+       .menu__text 
+        p.menu__subject RAW MEAT WITH BBQ ...............   
+         span.menu__price 10$
+        p.menu__subtitle ALERGENS ........................................................ 4, 8, 12
+      .menu__food#fish
+       img.menu__image(src="image/fish.png", alt="fish")
+       .menu__text 
+        p.menu__subject FRESH THOUT ............................   
+         span.menu__price 13$
+        p.menu__subtitle ALERGENS .............................................................. 4, 9
+      .menu__food
+       img.menu__image(src="image/soup.png", alt="soup")
+       .menu__text 
+        p.menu__subject MURSHROOM SOUP ...................    
+         span.menu__price 9$
+        p.menu__subtitle ALERGENS ........................................................ 1, 3, 11
+      .menu__food#chicken
+       img.menu__image(src="image/chicken.png", alt="chicken")
+       .menu__text 
+        p.menu__subject CHICKEN WITH POTATOES .......   
+         span.menu__price 18$
+        p.menu__subtitle ALERGENS ........................................................ 4, 8, 17
+      .menu__food
+       img.menu__image(src="image/pasta.png", alt="pasta")
+       .menu__text 
+        p.menu__subject PASTA WITH TOMATO PURÉE ...   
+         span.menu__price 12$
+        p.menu__subtitle ALERGENS ............................................................... 2, 6
+      .menu__food
+       img.menu__image(src="image/salad.png", alt="salad")
+       .menu__text 
+        p.menu__subject SALAD WITH BEETROOT ...........    
+          span.menu__price 6$
+        p.menu__subtitle ALERGENS ........................................................... none
+      
+   .food 
+        .food__content 
+         .food__menu
+          p.food__online ONLINE MENU
+          p.food__title SPAGHETTI WITH FRESH TOMATOES AND DRESSING
+          p.food__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          button.food__button 12$ - ORDER 

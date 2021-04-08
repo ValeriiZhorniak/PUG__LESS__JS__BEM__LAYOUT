@@ -1,4 +1,4 @@
-.header {
+.header__content {
   width: 100%;
   height: 1104px;
   background: url(../image/bg.png) 100% 100% no-repeat;
@@ -51,16 +51,10 @@
   justify-content: center;
   margin-top: 290px;
 }
-.header__center {
+.header__side:hover {
   background: url(../image/window.png) 100% 100% no-repeat;
-  background-size: 100% 100%;
-  width: 372px;
-  height: 207px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+}
+.header__center {
   margin: 234px 150px 0 150px;
 }
 .header__menu {
@@ -87,6 +81,126 @@
   margin-top: 29px;
 }
 .header__button:hover {
+  background-color: #2b2b2b;
+  border: #2b2b2b;
+  color: #f1ac11;
+  transition: ease 0.3s;
+}
+.menu__content {
+  width: 100%;
+  height: 620px;
+}
+.menu__title {
+  font-size: 42px;
+  color: #f1ac11;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 81px 0 40px 0;
+}
+.menu__vegan {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin-left: 19%;
+}
+.menu__subject {
+  font-size: 18px;
+  color: #2b2b2b;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 11px;
+}
+.menu__subtitle {
+  font-size: 13px;
+  color: #bcbcbc;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  margin-top: 11px;
+}
+.menu__food {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 42px 22px 42px;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 42px;
+}
+.menu__text {
+  margin-left: 33px;
+}
+.menu__price {
+  font-weight: bold;
+  padding: 5px;
+  background: url(../image/icon.png) 100% 100% no-repeat;
+  background-size: 100% 100%;
+}
+.menu__name {
+  font-size: 14px;
+  color: #2b2b2b;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-left: 20px;
+}
+.menu__name::before {
+  content: url(../image/uncheck.png);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.menu__box {
+  display: none;
+}
+.menu__box:checked + .menu__name:before {
+  content: url(../image/check.png);
+}
+.food__content {
+  width: 100%;
+  height: 380px;
+}
+.food__menu {
+  width: 900px;
+  height: 300px;
+  background: url(../image/food.png) 100% 100% no-repeat;
+  background-size: 100% 100%;
+}
+.food__online {
+  color: #f1ac11;
+  font-size: 12px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+}
+.food__title {
+  font-size: 24px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  color: #2b2b2b;
+}
+.food__subtitle {
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  color: #bcbcbc;
+}
+.food__button {
+  height: 32px;
+  width: 100px;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #f1ac11;
+  border: #f1ac11;
+  color: #2b2b2b;
+  font-style: italic;
+  border-bottom: 2px solid #b47d00;
+}
+.food__button:hover {
   background-color: #2b2b2b;
   border: #2b2b2b;
   color: #f1ac11;

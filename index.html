@@ -8,30 +8,89 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top"><img class="header__logo" src="image/logo.png">
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li><a class="header__link" href="#">PRICE LIST</a></li>
-            <li><a class="header__link" href="#">OPENING HOURS</a></li>
-            <li><a class="header__link" href="#">ABOUT US</a></li>
-            <li><a class="header__link" href="#">CONTACTS</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__menu">
-        <div class="header__side">
-          <p class="header__title">FOR MEAT LOVERS</p>
-          <button class="header__button">FULL MENU</button>
+      <div class="header__content">
+        <div class="header__top"><img class="header__logo" src="image/logo.png" alt="logo">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li><a class="header__link" href="#">PRICE LIST</a></li>
+              <li><a class="header__link" href="#">OPENING HOURS</a></li>
+              <li><a class="header__link" href="#">ABOUT US</a></li>
+              <li><a class="header__link" href="#">CONTACTS</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="header__center">
-          <p class="header__title">VEGETFRIAN & VEGAN</p>
-          <button class="header__button">FULL MENU</button>
-        </div>
-        <div class="header__side">
-          <p class="header__title">SEE OUR SECRETS</p>
-          <button class="header__button">TAKE ME THERE</button>
+        <div class="header__menu">
+          <div class="header__side">
+            <p class="header__title">FOR MEAT LOVERS</p>
+            <button class="header__button">FULL MENU</button>
+          </div>
+          <div class="header__center header__side">
+            <p class="header__title">VEGETFRIAN & VEGAN</p>
+            <button class="header__button">FULL MENU</button>
+          </div>
+          <div class="header__side">
+            <p class="header__title">SEE OUR SECRETS</p>
+            <button class="header__button">TAKE ME THERE</button>
+          </div>
         </div>
       </div>
     </header>
+    <div class="menu"> 
+      <div class="menu__content"> 
+        <p class="menu__title">DAILY MENU </p>
+        <div class="menu__vegan">
+          <input class="menu__box" id="check" type="checkbox" onclick="check()">
+          <label class="menu__name" for="check">SHOW VEGAN MENU ONLY</label>
+        </div>
+        <div class="menu__list"> 
+          <div class="menu__food" id="meat"><img class="menu__image" src="image/meat.png" alt="meat">
+            <div class="menu__text"> 
+              <p class="menu__subject">RAW MEAT WITH BBQ ...............   <span class="menu__price">10$</span></p>
+              <p class="menu__subtitle">ALERGENS ........................................................ 4, 8, 12</p>
+            </div>
+          </div>
+          <div class="menu__food" id="fish"><img class="menu__image" src="image/fish.png" alt="fish">
+            <div class="menu__text"> 
+              <p class="menu__subject">FRESH THOUT ............................   <span class="menu__price">13$</span></p>
+              <p class="menu__subtitle">ALERGENS .............................................................. 4, 9</p>
+            </div>
+          </div>
+          <div class="menu__food"><img class="menu__image" src="image/soup.png" alt="soup">
+            <div class="menu__text"> 
+              <p class="menu__subject">MURSHROOM SOUP ...................    <span class="menu__price">9$</span></p>
+              <p class="menu__subtitle">ALERGENS ........................................................ 1, 3, 11</p>
+            </div>
+          </div>
+          <div class="menu__food" id="chicken"><img class="menu__image" src="image/chicken.png" alt="chicken">
+            <div class="menu__text"> 
+              <p class="menu__subject">CHICKEN WITH POTATOES .......   <span class="menu__price">18$</span></p>
+              <p class="menu__subtitle">ALERGENS ........................................................ 4, 8, 17</p>
+            </div>
+          </div>
+          <div class="menu__food"><img class="menu__image" src="image/pasta.png" alt="pasta">
+            <div class="menu__text"> 
+              <p class="menu__subject">PASTA WITH TOMATO PURÉE ...   <span class="menu__price">12$</span></p>
+              <p class="menu__subtitle">ALERGENS ............................................................... 2, 6</p>
+            </div>
+          </div>
+          <div class="menu__food"><img class="menu__image" src="image/salad.png" alt="salad">
+            <div class="menu__text"> 
+              <p class="menu__subject">SALAD WITH BEETROOT ...........    <span class="menu__price">6$</span></p>
+              <p class="menu__subtitle">ALERGENS ........................................................... none</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="food"> 
+      <div class="food__content"> 
+        <div class="food__menu">
+          <p class="food__online">ONLINE MENU</p>
+          <p class="food__title">SPAGHETTI WITH FRESH TOMATOES AND DRESSING</p>
+          <p class="food__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button class="food__button">12$ - ORDER </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

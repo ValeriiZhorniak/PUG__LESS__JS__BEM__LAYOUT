@@ -1,13 +1,15 @@
 @color_white: #fff;
 @color_second: #f1ac11;
 @color_title: #2b2b2b;
-
-
+@color_gray: #bcbcbc;
+@color_border: #b47d00;
 .header{
-    width: 100%;
-    height: 1104px;
-    background: url(../image/bg.png) 100% 100% no-repeat;
-    background-size: 100% 100%;
+    &__content{
+        width: 100%;
+        height: 1104px;
+        background: url(../image/bg.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+    }
     &__top{
         display: flex;
         flex-direction: row;
@@ -54,17 +56,11 @@
         align-content: center;
         justify-content: center;
         margin-top: 290px;
+        &:hover{
+            background: url(../image/window.png) 100% 100% no-repeat;
+        }
     }
     &__center{
-        background: url(../image/window.png) 100% 100% no-repeat;
-        background-size: 100% 100%;
-        width: 372px;
-        height: 207px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
         margin: 234px 150px 0 150px;
     }
     &__menu{
@@ -89,6 +85,135 @@
         border: @color_second;
         color: @color_title;
         margin-top: 29px;
+        &:hover{
+            background-color: @color_title;
+            border: @color_title;
+            color: @color_second;
+            transition: ease 0.3s;
+        }
+    }
+}
+//header
+
+.menu{
+    &__content{
+        width: 100%;
+        height: 620px;
+    }
+    &__title{
+        font-size: 42px;
+        color: @color_second;
+        text-align: center;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin: 81px 0 40px 0;
+    }
+    &__vegan{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        margin-left: 19%;
+    }
+    &__subject{
+        font-size: 18px;
+        color: @color_title;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin-bottom: 11px;
+    }
+    &__subtitle{
+        font-size: 13px;
+        color: @color_gray;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: italic;
+        margin-top: 11px;
+    }
+    &__food{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 22px 42px 22px 42px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 42px;
+    }
+    &__text{
+        margin-left: 33px;
+    }
+    &__price{
+        font-weight: bold;
+        padding: 5px;
+        background: url(../image/icon.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+    }
+    &__name{
+        font-size: 14px;
+        color: @color_title;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin-left: 20px;
+        &::before{
+            content: url(../image/uncheck.png);
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__box{
+        display: none;
+        &:checked + .menu__name:before {
+            content: url(../image/check.png);
+        }
+    }
+}
+
+//menu
+
+.food{
+    &__content{
+        width: 100%;
+        height: 380px;
+    }
+    &__menu{
+        width: 900px;
+        height: 300px;
+        background: url(../image/food.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+    }
+    &__online{
+        color: @color_second;
+        font-size: 12px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: italic;
+    }
+    &__title{
+        font-size: 24px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: italic;
+        color: @color_title;
+    }
+    &__subtitle{
+        font-size: 14px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: italic;
+        color: @color_gray;
+    }
+    &__button{
+        height: 32px;
+        width: 100px;
+        border-radius: 2px;
+        font-size: 14px;
+        background-color: @color_second;
+        border: @color_second;
+        color: @color_title;
+        font-style: italic;
+        border-bottom: 2px solid @color_border;
         &:hover{
             background-color: @color_title;
             border: @color_title;
