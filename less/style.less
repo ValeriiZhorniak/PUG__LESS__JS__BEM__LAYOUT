@@ -258,3 +258,71 @@
 }
 
 /*food*/
+
+.address{
+    &__content{
+        height: 490px;
+        width: 100%;
+        background: url(../image/bg-2.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__box{
+        background: url(../image/window-2.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+        width: 568px;
+        height: 330px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 28px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 80px;
+    }
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__name{
+        font-size: 22px;
+        color: @color_second;
+        margin-left: 23px;
+    }
+    &__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    &__info{
+        font-style: italic;
+        font-size: 18px;
+    }
+    &__button{
+        height: 32px;
+        width: 130px;
+        border-radius: 2px;
+        font-size: 11px;
+        background-color: @color_second;
+        border: @color_second;
+        color: @color_title;
+        font-style: italic;
+        border-bottom: 2px solid @color_border;
+        margin: 40px auto 0 auto;
+        &:hover{
+            background-color: @color_title;
+            border: @color_title;
+            color: @color_second;
+            transition: ease 0.3s;
+        }
+    }
+    &__number{
+        margin-top: 3px;
+    }
+}
