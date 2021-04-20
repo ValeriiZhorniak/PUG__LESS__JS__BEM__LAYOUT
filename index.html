@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normal.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
     <script src="js/script.js"></script>
     <title>Le Restaurante</title>
   </head>
@@ -69,7 +70,7 @@
           </div>
           <div class="menu__food"><img class="menu__image" src="image/pasta.png" alt="pasta">
             <div class="menu__text"> 
-              <p class="menu__subject">PASTA WITH TOMATO PURÉE ...   <span class="menu__price">12$</span></p>
+              <p class="menu__subject">PASTA WITH TOMATO PUR&EacuteE ...   <span class="menu__price">12$</span></p>
               <p class="menu__subtitle">ALERGENS ............................................................... 2, 6</p>
             </div>
           </div>
@@ -84,16 +85,16 @@
     </div>
     <div class="food"> 
       <div class="food__content"> 
-        <div class="food__menu">
+        <div class="food__menu" id="menu">
           <div class="food__info">
             <p class="food__online">ONLINE MENU</p>
-            <p class="food__title">SPAGHETTI WITH FRESH TOMATOES AND DRESSING</p>
-            <p class="food__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="food__button">12$ - ORDER </button>
+            <p class="food__title" id="title">SPAGHETTI WITH FRESH TOMATOES AND DRESSING</p>
+            <p class="food__subtitle" id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="food__button" id="button">12$ - ORDER </button>
           </div>
         </div>
         <div class="food__box">
-          <p class="food__offer">NEXT OFFER<i class="food__right"></i></p>
+          <p class="food__offer" onclick="offer()">NEXT OFFER<i class="food__right" onclick="offer()"></i></p>
         </div>
       </div>
     </div>
@@ -106,7 +107,7 @@
               <p class="address__name">LeRestaurante</p>
             </div>
             <div class="address__info"> 
-              <p class="address__street">Hršpic 128 </p>
+              <p class="address__street">Hr&#353pic 128 </p>
               <p class="address__number">Pardubice, 530 01</p>
             </div>
           </div>
@@ -138,7 +139,7 @@
           <li><a class="info__item" href="#">OTHER</a></li>
         </ul>
         <div class="info__news"> 
-          <p class="info__title"> SIGN UP TO OUR NEWSLETTER</p>
+          <p class="info__title">SIGN UP TO OUR NEWSLETTER</p>
           <div class="info__block">
             <input class="info__text" type="text" placeholder="E-MAIL ADDRESS">
             <button class="info__button">SING UP</button>

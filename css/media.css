@@ -1,0 +1,96 @@
+@media (min-width: 1200px){
+    .food__content{
+        margin: 0 20% 0 0;
+    }
+    .header__logo{
+        margin: 71px 50px 0 0 ;
+    }
+}
+@media (max-width: 1200px){
+    .header__side{
+        margin-top: 60px;
+    }
+    .header__center{
+        margin: 60px 30px 0 30px;
+    }
+    .header__content{
+        min-height: 730px;
+    }
+    .header__logo{
+        margin: 71px 50px 0 0 ;
+    }
+    .header__link{
+        font-size: 20px;
+        margin: 0 10px 0 10px;
+    }
+    .menu__content{
+        height: 900px;
+    }
+    .food__menu{
+        margin-right: 2%;
+        min-width: 850px;
+    }
+    .food__info{
+        margin: 30px 60px 0 0;
+    }
+    .info__news{
+        margin: 80px 0 0 20px;
+    }
+}
+@media (max-width: 992px){
+    .header__logo{
+        margin: 71px 20px 0 0 ;
+    }
+    .header__link{
+        font-size: 17px;
+        margin: 0 15px 0 15px;
+    }
+    .info__news{
+        margin: 80px 0 0 20px;
+    }
+    .info__list{
+        margin: 80px 20px 0 20px;
+    }
+}  
+@media (max-width: 767px){
+    .header__logo{
+        display: none;
+    }
+    .header__link{
+        font-size: 12px;
+        margin: 0 10px 0 10px;
+    }
+    .header__nav{
+        margin-right: 0px;
+    }
+    .menu__subject{
+        font-size: 14px;
+    }
+    .menu__subtitle{
+        font-size: 10px;
+    }
+    .food__menu{
+        background: none;
+        margin-right: 1%;
+        min-width: 0px;
+    }
+    .food__info{
+        float: none;
+        margin: 30px 0 0 40px;
+    }
+    .info__block{
+        flex-wrap: wrap;
+    }
+    .info__text{
+        min-width: 150px;
+    }
+    .info__item{
+        font-size: 12px;
+    }
+    .info__list{
+        margin: 80px 10px 0 10px;
+    }
+    .food__right{
+        display: none;
+    }
+}

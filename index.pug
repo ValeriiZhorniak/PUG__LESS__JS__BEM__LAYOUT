@@ -4,6 +4,7 @@ html(lang="en")
   
     link(rel="stylesheet" type="text/css" href="css/style.css")
     link(rel="stylesheet" type="text/css" href="css/normal.css")
+    link(rel="stylesheet" type="text/css" href="css/media.css")
     script(src="js/script.js")
     title Le Restaurante
   body
@@ -66,7 +67,7 @@ html(lang="en")
       .menu__food
        img.menu__image(src="image/pasta.png", alt="pasta")
        .menu__text 
-        p.menu__subject PASTA WITH TOMATO PURÉE ...   
+        p.menu__subject PASTA WITH TOMATO PUR&EacuteE ...   
          span.menu__price 12$
         p.menu__subtitle ALERGENS ............................................................... 2, 6
       .menu__food
@@ -78,15 +79,15 @@ html(lang="en")
       
    .food 
         .food__content 
-         .food__menu
+         .food__menu#menu
           .food__info
            p.food__online ONLINE MENU
-           p.food__title SPAGHETTI WITH FRESH TOMATOES AND DRESSING
-           p.food__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           button.food__button 12$ - ORDER 
+           p.food__title#title SPAGHETTI WITH FRESH TOMATOES AND DRESSING
+           p.food__subtitle#subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           button.food__button#button 12$ - ORDER 
          .food__box
-          p.food__offer NEXT OFFER
-           i.food__right
+          p(onclick="offer()").food__offer NEXT OFFER
+           i(onclick="offer()").food__right
 
    .address
     .address__content 
@@ -97,7 +98,7 @@ html(lang="en")
         img(src="image/food-2.png", alt="").address__image
         p.address__name LeRestaurante
        .address__info 
-        p.address__street Hršpic 128 
+        p.address__street Hr&#353pic 128 
         p.address__number Pardubice, 530 01
       button.address__button SHOW ON THE MAP
       
