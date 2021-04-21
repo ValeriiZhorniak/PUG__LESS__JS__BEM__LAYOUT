@@ -1,8 +1,8 @@
 function check (){
-	var meat = document.getElementById('meat');
-	var fish = document.getElementById('fish');
-	var chicken = document.getElementById('chicken');
-	var check = document.getElementById('check');
+	let meat = document.getElementById('meat');
+	let fish = document.getElementById('fish');
+	let chicken = document.getElementById('chicken');
+	let check = document.getElementById('check');
 	if(check.checked){
 		meat.style.display = 'none';
 		fish.style.display = 'none';
@@ -15,10 +15,10 @@ function check (){
 }
 
 function offer (){
-	var button = document.getElementById('button');
-	var title = document.getElementById('title');
-	var subtitle = document.getElementById('subtitle');
-	var menu = document.getElementById('menu');
+	let button = document.getElementById('button');
+	let title = document.getElementById('title');
+	let subtitle = document.getElementById('subtitle');
+	let menu = document.getElementById('menu');
 	
 
 	button.innerHTML = '18$ - ORDER'
